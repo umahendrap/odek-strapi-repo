@@ -1,10 +1,10 @@
 import { test } from '@playwright/test';
 // eslint-disable-next-line import/extensions
-import { resetDatabaseAndImportDataFromPath } from '../scripts/dts-import';
+// import { resetDatabaseAndImportDataFromPath } from '../scripts/data-transfer';
 
 test.describe('Authentication', () => {
   test.beforeEach(async ({ page }) => {
-    await resetDatabaseAndImportDataFromPath({ filePath: './e2e/data/without-admin.tar' });
+    // await resetDatabaseAndImportDataFromPath('./e2e/data/backup.tar');
     await page.goto('/admin');
   });
 
