@@ -21,5 +21,9 @@ module.exports = {
       files: frontPaths,
       ...require('./.eslintrc.front.js'),
     },
+    {
+      files: ['docs/**/*.js(x)'],
+      ...require('./.eslintrc.docs.js'),
+    },
   ],
 };
