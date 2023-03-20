@@ -1,9 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { Box, Flex, FieldAction } from '@strapi/design-system';
-
-export const EndActionWrapper = styled(Box)`
-  position: relative;
-`;
+import { Flex, FieldAction } from '@strapi/design-system';
 
 export const FieldActionWrapper = styled(FieldAction)`
   svg {
